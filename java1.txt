@@ -1,0 +1,43 @@
+//Print prime numbers upto 100 without using any loops
+//question asked for Software Developer position at KyePot.
+
+import java.lang.Math; 
+public class HelloWorld
+{
+  public static void main(String[] args)
+  {
+    int limit = 100;
+    int start = 2;
+    int current  = 2;
+    int ini = 2;
+  myfun(start,current,limit);
+      
+  }
+  public static void myfun(int start, int current, int limit){
+    if(current<100){
+    if(start == current){
+      System.out.println(current);
+      myfun(start,++current,100);
+    }else{
+      if(start<(current/2)){
+    	//0 means not
+          //1 means yes
+      if(current % start == 0){
+       
+        myfun(2, ++current, 100);
+      }else{
+      start++;
+        myfun(start, current,100);
+      }
+      }else{
+      //update current
+        System.out.println(current);
+      	myfun(2, ++current,100);
+      }
+  }
+  
+}
+
+
+}
+}
