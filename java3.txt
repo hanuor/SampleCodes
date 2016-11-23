@@ -1,0 +1,77 @@
+//Typical Wordsquare problem
+//Asked in Google's software engineering internship interview.
+//Work in progress
+
+import java.lang.Math; 
+import java.util.*;
+public class HelloWorld
+{
+  
+  public static void main(String[] args)
+  {
+    ArrayList<String> mas = new ArrayList<String>();
+    mas.add("TREE");
+    mas.add("RACE");
+    mas.add("ECHO");
+    mas.add("EEOL");
+    mas.add("WELL I AM HERE");
+    mas.add("EEE");
+    
+	ArrayList<String> newS = process(mas);
+    
+  }
+  public static ArrayList<String> process(ArrayList<String> mas){
+    ArrayList<String> fil = new ArrayList<String>();
+    for(int i = 0; i< mas.size(); i++){
+      
+      if(element.length() == lenCheck){
+        
+        fil.add(element);
+      }else{
+       
+       //keep on rolling
+      }
+    	
+    }
+    return fil;
+    
+    
+}
+  
+  public static ArrayList<String> filter(ArrayList<String> mas){
+    ArrayList<String> fil = new ArrayList<String>();
+  	boolean check = false;
+    List<char[]> temp = new ArrayList<char[]>();
+    int lenCheck = mas.get(0).length();
+    int rowCheck = mas.get(0).length();
+    boolean check = false;
+    
+    for(int i = 0; i< mas.size(); i++){
+      String element  = mas.get(i);
+      int currentlen = element.length();
+      char ch1[]  = element.toCharArray();
+      temp.add(ch1);
+      k = 1;
+      s = 0;
+      
+      for(j = i ; j< currentlen; j++){
+        if(i <= mas.size()){ 
+        char chT[]  = element.toCharArray();
+          if(ch1[k] == chT[0]){
+          	k++;
+            check = true;
+            temp.add(chT);
+          }else{
+            false;
+            temp.clear();
+          }
+          
+          }else{
+          	System.out.println("Not a word square");
+          }
+      }
+    
+    }
+    return fil;
+  }
+}
